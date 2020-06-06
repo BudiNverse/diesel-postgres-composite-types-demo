@@ -1,0 +1,9 @@
+web:
+  image: 'postgres:latest'
+  container_name: 'diesel_postgres_demo'
+  restart: always
+  environment:
+    POSTGRES_PASSWORD: hello_world
+    POSTGRES_DB: diesel_postgres
+  ports:
+    - "7000:5432"
